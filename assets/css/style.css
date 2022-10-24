@@ -1,10 +1,11 @@
+/* variables set for the commonly used colors within the page */
 :root {
     --white: white;
     --black: black;
     --beige: rgb(222, 222, 192);
     --navy: rgb(0, 0, 71);
 }
-
+/* the body was set to flex-direction: column in order to make sure all the different parts of the page are stacked on top of one another rather than side by side */
 body {
     background-color: var(--white);
     color: var(--black);
@@ -13,7 +14,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+/* the div and nav elements are the children of the header element, the various flex properties affect these siblings */
 header {
     display: flex;
     flex-direction: row;
@@ -56,14 +57,14 @@ header nav ul li a {
     color: var(--beige);
     text-decoration: none;
 }
-
+/* the hover pseudoclass puts focus on the link when the mouse is over it */
 header nav ul li a:hover {
     background-color: var(--beige);
     color: var(--navy);
     transition-duration: 1s;
     font-weight: bold;
 }
-
+/* the hero id contains the hero image as well as providing the background for the profile picture. the flex properties move the profile picture over the hero image */
 #hero {
     display: flex;
     height: 420px;
@@ -75,7 +76,7 @@ header nav ul li a:hover {
     justify-content: flex-end;
     align-items: center;
 }
-
+/* my profile picture is set to the right side of the hero image, set inside of a round border */
 #profile {
     display: flex;
     justify-content: flex-end;
@@ -86,7 +87,7 @@ header nav ul li a:hover {
     border: 10px solid var(--beige);
     margin-right: 20px;
 }
-
+/* this element contains all the sections listed in the nav bar. flex-direction is set to column to ensure they are all listed vertically */
 main {
     display: flex;
     flex-direction: column;
@@ -98,7 +99,7 @@ main section {
     justify-content: center;
     padding: 25px 0;
 }
-
+/* leftside class is essentially the container for the h2 headings for each section */
 .leftside {
     display: flex;
     width: 15vw;
@@ -113,7 +114,7 @@ h2 {
     display: flex;
     align-items: center;
 }
-
+/* rightside class is the container for all the content in each section */
 .rightside {
     display: flex;
     width: 70vw;
@@ -134,7 +135,7 @@ h2 {
     display: flex;
     justify-content: center;
 }
-
+/* first image in work section */
 #discgolf {
     width: 70vw;
     height: 70vh;
@@ -146,7 +147,7 @@ h2 {
     border-radius: 5px;
     margin: 10px;
 }
-
+/* second image in work section */
 #newjersey {
     width: 30vw;
     height: 30vh;
@@ -158,7 +159,7 @@ h2 {
     border-radius: 5px;
     margin: 10px;
 }
-
+/* 3rd image in work section */
 #greystone {
     width: 30vw;
     height: 30vh;
@@ -170,7 +171,7 @@ h2 {
     border-radius: 5px;
     margin: 10px;
 }
-
+/* 4th image in work section */
 #wolfhill {
     width: 30vw;
     height: 30vh;
@@ -182,13 +183,13 @@ h2 {
     border-radius: 5px;
     margin: 10px;
 }
-
+/* pseudoclass that highlights an image when the mouse hovers over it */
 .imagehover:hover {
     box-shadow: 10px 10px 5px 5px gray;
     transition-duration: 1s;
     opacity: .5;
 }
-
+/* caption for each image */
 h3 {
     background-color: var(--beige);
     color: var(--navy);
@@ -215,7 +216,7 @@ main section div ul {
 main section div ul li a {
     text-decoration: none;
 }
-
+/* pseudoclass to highlihght each link when hovering over it */
 main section div ul li a:hover {
     background-color: var(--black);
     color: var(--white);
@@ -229,7 +230,7 @@ footer {
     align-items: center;
     flex-direction: column;
 }
-
+/* this makes the page responsive if the viewport is smaller than 992px wide */
 @media screen and (max-width: 992px) {
     body {
         font-size: 14px;
@@ -246,17 +247,18 @@ footer {
     h2 {
         font-size: 20px;
     }
-
+    /* the behavior of the images is the biggest adjustment for this media query */
     #discgolf, #greystone, #newjersey, #wolfhill {
     width: 50vw;
     height: 50vh;
     }
 }
-
+/* this will make the page responsive if the viewport is smaller than 768px wide */
 @media screen and (max-width: 768px) {
     body {
         flex-direction: column;
     }
+    /* the nav bar will now show below the h1 heading to conserve horizontal space */
     header {
         height: fit-content;
         align-items: baseline;
@@ -290,7 +292,7 @@ footer {
         justify-content: flex-start;
         align-items: flex-start;
     }
-
+    /* the profile picture shrinks down and moves to the other side of the screen */
     #profile {
         display: flex;
         justify-content: flex-start;
@@ -311,14 +313,14 @@ footer {
     nav ul {
         padding: 0;
     }
-
+    /* this makes the h2 headings and content stacked on top of each other rather than side by side  */
     main section {
         display: flex;
         flex-direction: column;
         align-content: center;
         padding: 0;
     }
-
+    /* the border is not assigned the leftside class rather than the rightside class */
     .leftside {
         width: 100%;
         justify-content: center;

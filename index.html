@@ -8,13 +8,12 @@
 </head>
 
 <body>
-
+    <!-- the header element contains my heading and the link to the different sections of the page -->
     <header>
-
         <div>
             <h1>Howard Van Salisbury</h1>
         </div>
-
+        <!-- the nav element is the nav bar for the page -->
         <nav>
             <ul>
                 <li>
@@ -28,69 +27,61 @@
                 </li>
             </ul>
          </nav>
-
     </header>
-    
+    <!-- The hero image a picture of me enjoying a day of disc golf -->
     <section id="hero">
         <img src="./assets/images/Howard1.jpg" alt="Howard Profile Picture" id="profile">   
     </section>
-    
+    <!-- Each link in the nav bar is now a section within the main element -->
     <main>
-
+        <!-- each section has been split into two parts: leftside which contains my h2 headers, and rightside with contains the content of each section -->
         <section id="aboutme">
-
+            <!-- the h2 element is contained within a div tag in order to keep the containers neatly organized -->
             <div class="leftside">
                 <h2>About Me</h2>
             </div>
-
+            <!-- the rightside contains the content in each section -->
             <div class="rightside">
                 <p>
                     Hello World! I'm Howard Van Salisbury. I am a developer who learned from the Rutgers Full-Stack Coding Bootcamp. I know HTML, CSS, and JavaScript. I have a BA in Mathematics and I'm a certified math teacher too. I live in Hazlet, NJ where you can find me being dad to two amazing kids and husband to my beautiful wife. When I'm not coding, I like to play disc golf, play guitar, and bake. 
                 </p>
             </div>
-
         </section>
 
         <section id="work">
-
             <div class="leftside">
                 <h2>Work</h2>
             </div>
-
+            <!-- the images within the work section are all contained within a unique id -->
             <div id="images" class="rightside">
                 <a href="https://hvansalisbury.github.io/Horiseon-HTML-CSS-Refactoring/">
                     <div id="discgolf" class="imagehover">
                         <h3>Horiseon HTML CSS Refactoring</h3>
                     </div>
-                </a>
-                
+                </a>                
                 <a href="https://hvansalisbury.github.io/Horiseon-HTML-CSS-Refactoring/">
                     <div id="newjersey" class="imagehover">
                         <h3>Horiseon HTML CSS Refactoring</h3>   
                     </div>
                 </a>
-
                 <a href="https://hvansalisbury.github.io/Prework-Study-Guide/">
                     <div id="greystone" class="imagehover">
                         <h3>Prework Study Guide</h3>   
                     </div>
                 </a>
-
                 <a href="https://hvansalisbury.github.io/Prework-Study-Guide/">
                     <div id="wolfhill" class="imagehover">
                         <h3>Prework Study Guide</h3>   
                     </div>
                 </a>
             </div>
-
         </section>
 
         <section id="contactme">
-
             <div class="leftside">
                 <h2>Contact Me</h2>
             </div>
-
+            <!-- my contact information is set up as a simple list, my real phone number was not provided -->
             <div class="rightside" id="contacts">
                 <ul>
                     <li>
@@ -107,25 +98,18 @@
                     </li>
                 </ul>
             </div>
-
         </section>
-
     </main>
 
     <footer>
-
         <div>
             <h4>Made with ❤️️ by Howard Van Salisbury</h4>
         </div>
-
         <div>
             <p>
                 &copy; 2022 Van Salisbury, Inc.
             </p>
         </div>
-
     </footer>
-
 </body>
-
 </html>
