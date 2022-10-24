@@ -1,0 +1,340 @@
+:root {
+    --white: white;
+    --black: black;
+    --beige: rgb(222, 222, 192);
+    --navy: rgb(0, 0, 71);
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: var(--navy);
+    color: var(--beige);
+    align-items: center;
+    height: 100px;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    font-size: 48px;
+    font-weight: bold;
+    background-color: var(--beige);
+    color: var(--navy);
+    height: 100px;
+    text-align: right;
+    padding-left: 50px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    font-size: 20px;
+    list-style-type: none;
+    margin: 0px 10px;
+}
+
+header nav ul li a {
+    color: var(--beige);
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    background-color: var(--beige);
+    color: var(--navy);
+    transition-duration: 1s;
+    font-weight: bold;
+}
+
+#hero {
+    display: flex;
+    height: 420px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/Howard_1.jpg");
+    background-size: cover;
+    background-position: center;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#profile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border: 10px solid var(--beige);
+    margin-right: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 25px 0;
+}
+
+.leftside {
+    display: flex;
+    width: 15vw;
+    justify-content: flex-end;
+    align-content: center;
+    padding-right: 25px;
+    text-align: right;
+}
+
+h2 {
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.rightside {
+    display: flex;
+    width: 70vw;
+    align-content: center;
+    padding: 25px;
+    border-left: 10px solid var(--black);
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#work {
+    display: flex;
+    justify-content: center;
+}
+
+#discgolf {
+    width: 70vw;
+    height: 70vh;
+    justify-content: center;
+    background-image: url(../images/Disc-Golf-1.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 5px solid var(--beige);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#newjersey {
+    width: 30vw;
+    height: 30vh;
+    justify-content: space-around;
+    background-image: url(../images/New_Jersey_1.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 5px solid var(--beige);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#greystone {
+    width: 30vw;
+    height: 30vh;
+    justify-content: space-around;
+    background-image: url(../images/Greystone_9.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 5px solid var(--beige);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#wolfhill {
+    width: 30vw;
+    height: 30vh;
+    justify-content: space-around;
+    background-image: url(../images/Wolf_Hill_16.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 5px solid var(--beige);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.imagehover:hover {
+    box-shadow: 10px 10px 5px 5px gray;
+    transition-duration: 1s;
+    opacity: .5;
+}
+
+h3 {
+    background-color: var(--beige);
+    color: var(--navy);
+    text-decoration: none;
+    font-weight: bold;
+    width: fit-content;
+    padding: 10px;
+}
+
+#contacts {
+    display: flex;
+    flex-direction: row;
+}
+
+main section div ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+}
+
+main section div ul li a {
+    text-decoration: none;
+}
+
+main section div ul li a:hover {
+    background-color: var(--black);
+    color: var(--white);
+    transition-duration: 1s;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        font-size: 14px;
+    }
+    
+    h1 {
+        font-size: 32px;
+    }
+
+    header nav ul li a {
+        font-size: 18px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+
+    #discgolf, #greystone, #newjersey, #wolfhill {
+    width: 50vw;
+    height: 50vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    header {
+        height: fit-content;
+        align-items: baseline;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    header div {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    header div h1 {
+        height: fit-content;
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+        margin: 25px 0 solid var(--beige);
+    }
+
+    #hero {
+        display: flex;
+        height: 420px;
+        width: 100%;
+        margin-bottom: 25px;
+        background-image: url("../images/Howard_1.jpg");
+        background-size: cover;
+        background-position: center;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    #profile {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 150px;
+        width: 150px;
+        border: 5px solid var(--beige);
+        transition-duration: 1s;
+    }
+
+    nav {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    main section {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding: 0;
+    }
+
+    .leftside {
+        width: 100%;
+        justify-content: center;
+        padding: 0;
+        border-bottom: 10px solid var(--black);
+    }
+
+    .rightside {
+        width: 100%;
+        justify-content: center;
+        padding: 0;
+        border: 0;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+    }
+}
